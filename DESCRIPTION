@@ -1,0 +1,30 @@
+Package: PropCIsGUI
+Type: Package
+Title: Shiny Application for Confidence Intervals for Proportions
+Version: 0.1.0
+Authors@R: person("Ralph", "Scherer",
+    email = "shearer.ra76@gmail.com",
+    role = c("aut", "cre"))
+Author: Ralph Scherer [aut, cre]
+Maintainer: Ralph Scherer <shearer.ra76@gmail.com>
+Description: A 'shiny' graphical interface exposing all confidence interval
+    methods for proportions from the 'PropCIs' package. Supports single
+    proportions (Wilson, Clopper-Pearson, mid-P, Blaker, Agresti-Coull),
+    two independent proportions (difference, relative risk, odds ratio),
+    matched pairs, and Bayesian credible intervals via Monte Carlo simulation.
+    Only one method is computed at a time to prevent type I error inflation
+    through cherry-picking of results.
+License: GPL-2
+URL: https://github.com/shearer/PropCIsGUI
+BugReports: https://github.com/shearer/PropCIsGUI/issues
+Imports:
+    shiny,
+    bslib,
+    PropCIs,
+    ggplot2,
+    DT,
+    patchwork,
+    scales
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Config/roxygen2/version: 8.0.0
