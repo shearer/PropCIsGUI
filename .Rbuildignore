@@ -2,3 +2,7 @@
 ^\.Rproj\.user$
 ^\.git$
 ^\.gitignore$
+^\.Rhistory$
+^\.RData$
+^.*\.tar\.gz$
+^.*\.Rcheck$
